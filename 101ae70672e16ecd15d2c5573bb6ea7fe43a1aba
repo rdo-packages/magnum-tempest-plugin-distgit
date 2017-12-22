@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a6ced46_e9ba7109",
+        "filename": "python-magnum-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 111
+      },
+      "writtenOn": "2017-12-22T09:22:32Z",
+      "side": 1,
+      "message": "please remove this.",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 79,
+        "endChar": 5
+      },
+      "revId": "101ae70672e16ecd15d2c5573bb6ea7fe43a1aba",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}

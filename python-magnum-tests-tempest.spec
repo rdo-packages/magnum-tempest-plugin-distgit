@@ -34,14 +34,14 @@ BuildRequires:  openstack-macros
 Summary: %{summary}
 %{?python_provide:%python_provide python2-%{service}-tests-tempest}
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
-BuildRequires:  python-setuptools
+BuildRequires:  python2-pbr
+BuildRequires:  python2-setuptools
 
-Requires:   python-pbr
-Requires:   python-six  >= 1.9.0
-Requires:   python-tempest >= 1:17.2.0
-Requires:   python-oslo-config
-Requires:   python-oslo-log
+Requires:   python2-pbr >= 2.0.0
+Requires:   python2-six  >= 1.9.0
+Requires:   python2-tempest >= 1:17.2.0
+Requires:   python2-oslo-config >= 2:4.0.0
+Requires:   python2-oslo-log >= 3.30.0
 
 %description -n python2-%{service}-tests-tempest
 %{common_desc}
@@ -50,8 +50,8 @@ Requires:   python-oslo-log
 %package -n python-%{service}-tests-tempest-doc
 Summary:        python-%{service}-tests-tempest documentation
 
-BuildRequires:  python-sphinx
-BuildRequires:  python-openstackdocstheme
+BuildRequires:  python2-sphinx
+BuildRequires:  python2-openstackdocstheme
 
 %description -n python-%{service}-tests-tempest-doc
 It contains the documentation for the magnum tempest plugin.
@@ -65,11 +65,11 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
-Requires:   python3-pbr
+Requires:   python3-pbr >= 2.0.0
 Requires:   python3-six  >= 1.9.0
 Requires:   python3-tempest >= 1:17.2.0
-Requires:   python3-oslo-config
-Requires:   python3-oslo-log
+Requires:   python3-oslo-config >= 2:4.0.0
+Requires:   python3-oslo-log >= 3.30.0
 
 %description -n python3-%{service}-tests-tempest
 %{common_desc}

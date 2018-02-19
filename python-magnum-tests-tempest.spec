@@ -1,9 +1,14 @@
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 418c238b59232efdee98b17a1677b4a4745f1fc5
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 %global service magnum
 %global plugin magnum-tempest-plugin
 %global module magnum_tempest_plugin
-%global with_doc 1
-
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+# FIXME(ChandanKumar) FIx doc building step
+%global with_doc 0
 
 %if 0%{?fedora}
 %global with_python3 1
@@ -14,13 +19,13 @@ This package contains Tempest tests to cover the magnum project. \
 Additionally it provides a plugin to automatically load these tests into Tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.0.1
+Release:    0.1%{?alphatag}%{?dist}
 Summary:    Tempest Integration of Magnum Project
 License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}/
 
-Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{upstream_version}.tar.gz
+Source0:    http://github.com/openstack/%{plugin}/archive/%{commit}.tar.gz#/%{plugin}-%{shortcommit}.tar.gz
 
 BuildArch:  noarch
 
@@ -123,3 +128,5 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Mon Feb 19 2018 Chandan Kumar <chkumar@redhat.com> 0.0.1-0.1.418c238bgit
+- Update to pre-release 0.0.1 (418c238b59232efdee98b17a1677b4a4745f1fc5)

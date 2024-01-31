@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0xa7475c5f2122fec3f90343223fe3bf5aad1080e4
+%global sources_gpg_sign 0x815afec729392386480e076dcc0dfe2d21c023c9
 %global service magnum
 %global plugin magnum-tempest-plugin
 %global module magnum_tempest_plugin
@@ -12,7 +12,7 @@ This package contains Tempest tests to cover the magnum project. \
 Additionally it provides a plugin to automatically load these tests into Tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    2.0.0
+Version:    2.1.0
 Release:    1%{?dist}
 Summary:    Tempest Integration of Magnum Project
 License:    ASL 2.0
@@ -106,6 +106,9 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Wed Jan 31 2024 RDO <dev@lists.rdoproject.org> 2.1.0-1
+- Update to 2.1.0
+
 * Wed Mar 15 2023 RDO <dev@lists.rdoproject.org> 2.0.0-1
 - Update to 2.0.0
 

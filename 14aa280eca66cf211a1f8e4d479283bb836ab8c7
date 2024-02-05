@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96f62cb4_05b1ace5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-02-05T12:34:16Z",
+      "side": 1,
+      "message": "it\u0027s missing kubernetes\u003e\u003d26.0.0, I\u0027m working on it",
+      "revId": "14aa280eca66cf211a1f8e4d479283bb836ab8c7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}

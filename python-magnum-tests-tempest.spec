@@ -116,3 +116,4 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/magnum-tempest-plugin/commit/8bb98da1dbf0c2ac542cab66d8bf50f5d6efc065
